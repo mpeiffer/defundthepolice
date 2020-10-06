@@ -12,7 +12,7 @@ PAGES = {
 def show_menu():
     st.sidebar.title("Social Media Toolkit Generator")
     st.sidebar.header("Defund the Police")
-    dark_theme = st.checkbox('Dark theme')
+    dark_theme = st.checkbox('Dark theme', value="False")
     if dark_theme:
         show_dark_theme()
     else:
@@ -37,7 +37,7 @@ def show_dark_theme():
     stt.set_theme({'primary': '#1b3388'})
 
 def show_light_theme():
-    stt.set_theme({'primary': '#e6e6ff'})
+    stt.set_theme({'primary': '#f63366'})
 
 def main():
     show_menu()
