@@ -38,10 +38,6 @@ def show_dark_theme():
 
 def show_light_theme():
     stt.set_theme({'primary': '#f63366'})
-    stt.set_theme({'secondary': '#f0f2f6'})
-    stt.set_theme({'black': '#262730'})
-    stt.set_theme({'yellow': '#fffd80'})
-    stt.set_theme({'white': '#ffffff'})
 
 def main():
     show_menu()
