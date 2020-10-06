@@ -62,7 +62,7 @@ def show_light_theme():
                 <style>
                 #MainMenu {visibility: hidden;}
                 footer {visibility: hidden;}
-                .sidebar .sidebar-content {background-image: linear-gradient(180deg,#e76f51,#e9c46a);}
+                .sidebar .sidebar-content {background-image: linear-gradient(180deg,#ff6b6b,#ffe66d));}
                 .btn-outline-secondary {
                 border-color: #D0F1BF;
                 color: #000000;
@@ -70,7 +70,7 @@ def show_light_theme():
                 body {
                 color: #000000;
                 text-align: left;
-                background-color: #83c5be;
+                background-color: #d8dbe2;;
                 }
                 </style>
                 """
