@@ -37,7 +37,7 @@ def show_dark_theme():
     stt.set_theme({'primary': '#1b3388'})
 
 def show_light_theme():
-    pass
+    stt.set_theme({'primary': '#e6e6ff'})
 
 def main():
     show_menu()
