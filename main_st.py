@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit_theme as stt
 
 from apps import home, county_compare
 
@@ -33,7 +34,7 @@ def show_menu():
     page()
 
 def show_dark_theme():
-    pass
+    stt.set_theme({'primary': '#1b3388'})
 
 def show_light_theme():
     pass
