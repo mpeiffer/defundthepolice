@@ -37,10 +37,44 @@ def set_theme(css_file):
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 def show_dark_theme():
-    pass
+    hide_streamlit_style = """
+                <title> Half Explot </title>
+                <style>
+                #MainMenu {visibility: hidden;}
+                footer {visibility: hidden;}
+                .sidebar .sidebar-content {background-image: linear-gradient(180deg,#4CA1AF,#2c3e50);}
+                .btn-outline-secondary {
+                border-color: #09ab3b85;
+                color: #f9f9f9;
+                }
+                body {
+                color: #fafafa;
+                text-align: left;
+                background-color: #262730;
+                }
+                </style>
+                """
+    st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 def show_light_theme():
-    set_theme('light_style.css')
+    hide_streamlit_style = """
+                <title> Half Explot </title>
+                <style>
+                #MainMenu {visibility: hidden;}
+                footer {visibility: hidden;}
+                .sidebar .sidebar-content {background-image: linear-gradient(180deg,#9ABD97,#B6D7B9);}
+                .btn-outline-secondary {
+                border-color: #D0F1BF;
+                color: #000000;
+                }
+                body {
+                color: #000000;
+                text-align: left;
+                background-color: #ffffff;
+                }
+                </style>
+                """
+    st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 def main():
     show_menu()
